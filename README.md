@@ -4,6 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+<<<<<<< HEAD
 - Open a terminal.
 - Run `cd smell-cat-contact`.
 - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -17,6 +18,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Node.js Express server information
 
 In order to change the recipient of the email go to server.js file, and change in mailOptions the 'to'.
+=======
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+>>>>>>> 4a2fd94 (initial commit)
 
 ## Code scaffolding
 
@@ -24,8 +28,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+<<<<<<< HEAD
 - Run `cd smell-cat-contact`.
 - Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+=======
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+>>>>>>> 4a2fd94 (initial commit)
 
 ## Running unit tests
 
