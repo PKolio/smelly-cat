@@ -1,0 +1,23 @@
+.dialog-content {
+  position: relative; /* or position: absolute; */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Adjust the z-index value as needed */
+}
+
+
+.dialog-content p {
+  margin-bottom: 20px;
+}
+
+.dialog-content button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

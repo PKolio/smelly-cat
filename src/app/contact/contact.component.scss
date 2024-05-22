@@ -1,0 +1,344 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 10%;  //50px makes it look closer to the sample!!!!!
+}
+
+.contact-form {
+  flex: 1 1 30%; /* Adjust width of the contact form */
+  padding: 20px;
+}
+
+.contact-us-text{
+  font-size: 40px;
+  font-family: 'Manrope-ExtraBold', sans-serif;
+}
+
+.contact-details {
+  flex: 1 1 45%; /* Adjust width of the contact details */
+  padding: 20px;
+  margin-top: 5rem;
+  text-align: right; /* Align headquarters text towards the right */
+}
+
+.contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px; /* Add space between form groups */
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Add space between label and input */
+  font-size: 14px;
+  font-family: 'Manrope-SemiBold', sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 4px; /* Reduce padding to make the input fields smaller */
+  font-size: 14px; /* Reduce font size */
+}
+
+.form-group-row {
+  display: flex;
+  justify-content: space-between;
+  // margin-bottom: 10px;
+}
+
+.form-group-row .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-row .form-group:first-child {
+  margin-right: 20px;
+}
+
+.form-group-row .form-group:last-child {
+  margin-left: 20px;
+}
+
+.form-group-row .form-group label {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Manrope-SemiBold', sans-serif;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+#terms-group {
+  margin-bottom: 20px; /* Add space between form groups */
+}
+
+#terms-group input[type="checkbox"] {
+  margin-right: 10px; /* Adjust the spacing between the checkbox and the label */
+  align-self: flex-start; /* Align the checkbox to the start */
+}
+
+#terms-group label {
+  margin: 0; /* Remove any default margins */
+  display: inline-block; /* Display the label inline with the checkbox */
+  vertical-align: top; /* Align the label to the top of the checkbox */
+  font-weight: normal;
+  font-size: 14px;
+  font-family: 'Manrope-Regular', sans-serif;
+}
+
+.checkbox-label-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.checkbox-label-container input[type="checkbox"] {
+  margin-right: 10px; /* Adjust the spacing between the checkbox and the label */
+}
+
+
+hr {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Manrope-ExtraLight_Bold', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 169px;
+  height: 48px
+}
+
+button:hover {
+  background-color: #e04c4c;
+}
+
+.contact-details iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.cat-persons-text {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  padding-bottom: 20px;
+}
+
+.optional-text {
+  color:#9784FF;
+  float: right;
+  font-size: 14px;
+  font-family: 'Manrope-Medium', sans-serif;
+}
+
+.headquarters {
+  margin-top: 20px;
+  text-align: right;
+  font-family: 'Manrope-ExtraLight_Medium', sans-serif;
+  font-size: 20px; //24px!!!!!!!!!
+  font-weight: 600;
+}
+
+.headquarters p {
+  margin: 5px 0;
+  font-size: 16px; //18px!!!!!!!!!
+  font-weight: 500; /* Set font weight to medium */
+  font-family: 'Manrope-ExtraLight_Medium', sans-serif;
+}
+
+#divider {
+  border-bottom: 1px solid #D8D8D8; /* Add bottom border for divider */
+  height: 2px;
+  margin: 20px 0; /* Add margin to space out the divider */
+}
+
+/* Specific width adjustments */
+#postalCode {
+  width:100;
+}
+
+#address {
+  width: 50%;
+}
+
+#city {
+  width: 150px; /* Set a specific width for the city input field */
+}
+
+#fullName,
+#email {
+  width: 100%; /* Keep full width for these input fields */
+}
+
+/* Aligning the Full Name and Email input fields to the right of their labels */
+#fullName-group,
+#email-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#fullName-group label,
+#email-group label {
+  width: 150px; /* Adjust this value as needed */
+  font-size: 14px;
+  font-family: 'Manrope-SemiBold', sans-serif;
+}
+
+#fullName-group input,
+#email-group input {
+  flex: 1;
+}
+
+::placeholder {
+  color:#A0A9BA; /* Set the color of the placeholder text */
+  font-size: 16px; /* Set the font size of the placeholder text */
+  font-family: 'Manrope-Regular', sans-serif; /* Set the font family of the placeholder text */
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 1069px) {
+  .contact-container {
+    flex-direction: column; /* Stack the flex items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .contact-details {
+    flex: 1 1 100%; /* Make both sections take full width on smaller screens */
+    width: 100%; /* Ensure sections don't exceed the width of the screen */
+    margin-bottom: 20px; /* Add margin between sections */
+    text-align: center; /* Center-align content */
+    padding: 0px;
+  }
+
+  .headquarters {
+    margin-top: 20px; /* Add margin to separate from iframe */
+    margin-left: auto; /* Center the content horizontally */
+    margin-right: auto; /* Center the content horizontally */
+    max-width: 70%; /* Limit maximum width of content */
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-details {
+    flex: 1 1 100%; /* Make both sections take full width on smaller screens */
+    width: 100%; /* Ensure sections don't exceed the width of the screen */
+    margin-bottom: 20px; /* Add margin between sections */
+    text-align: center; /* Center-align content */
+    padding: 0px;
+  }
+
+  .contact-us-text{
+    font-size: 30px;
+    font-family: 'Manrope-ExtraBold', sans-serif;
+  }
+
+  .form-group,
+  .form-group-row {
+    margin-left: 0; /* Reset left margin for form groups */
+    margin-right: 0; /* Reset right margin for form groups */
+  }
+
+  .form-group label {
+    text-align: left; /* Align labels to the left */
+  }
+
+  #divider {
+    display: none; /* Hide divider on smaller screens */
+  }
+
+  /* Adjust specific width for input fields */
+  #city,
+  #postalCode,
+  #address {
+  width: calc(100% - 11px); /* Adjust width for these input fields */
+  /* Subtracting 10px for margin between fields */
+}
+
+  /* Aligning the Full Name and Email input fields to the center */
+  #fullName-group,
+  #email-group {
+    justify-content: center;
+  }
+
+  #fullName-group label,
+  #email-group label {
+    width: auto; /* Reset width for labels */
+    margin-right: 10px; /* Add margin to labels */
+  }
+
+  /* Increase font size for textarea on smaller screens */
+  #message {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraLight_Bold', sans-serif;
+  }
+
+  .cat-persons-text{
+    text-align: left;
+  }
+
+  .headquarters {
+    margin-top: 20px; /* Add margin to separate from iframe */
+    margin-left: auto; /* Center the content horizontally */
+    margin-right: auto; /* Center the content horizontally */
+    max-width: 70%; /* Limit maximum width of content */
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .contact-details {
+    flex: 1 1 100%; /* Make both sections take full width on smaller screens */
+    max-width: 100%; /* Ensure sections don't exceed the width of the screen */
+    margin-bottom: 20px; /* Add margin between sections */
+    text-align: center; /* Center-align content */
+    padding: 0px;
+  }
+
+  .contact-details iframe {
+    height: 250px; /* Increase height of iframe */
+    width: 100%;
+    margin: 0 auto; /* Center iframe horizontally */
+  }
+
+  .headquarters {
+    margin-top: 20px; /* Add margin to separate from iframe */
+    margin-left: auto; /* Center the content horizontally */
+    margin-right: auto; /* Center the content horizontally */
+    max-width: 70%; /* Limit maximum width of content */
+    text-align: center;
+  }
+
+  button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraLight_Bold', sans-serif;
+  }
+}

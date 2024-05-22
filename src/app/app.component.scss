@@ -1,0 +1,162 @@
+/* Existing styles for desktop navbar */
+nav {
+  background-color: #fff;
+  color: grey;
+  padding: 0.35em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-left: 10.5%;
+}
+
+.nav-logo img {
+  width: 100px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin-right: 10%;
+  font-size: 14px;
+  font-family: 'Manrope-ExtraLight_Bold', sans-serif;
+  font-weight: Bold;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  color: grey;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.nav-links li a:hover {
+  background-color: #f0f0f0;
+  color: grey;
+  border-radius: 4px;
+}
+
+/* Dropdown menu styles */
+.nav-toggle {
+  display: none; /* Hide toggle button by default */
+}
+
+.nav-links {
+  position: relative; /* Ensure relative positioning for dropdown */
+}
+
+.nav-links ul {
+  position: absolute;
+  top: 100%; /* Position dropdown menu below nav links */
+  left: 0;
+  display: none; /* Hide dropdown menu by default */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure dropdown is on top of other content */
+}
+
+.nav-links li:hover ul {
+  display: block; /* Show dropdown menu on hover */
+}
+
+/* Adjust styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .nav-logo {
+    margin-left: 1rem; /* Adjust margin for smaller screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links on smaller screens */
+    flex-direction: column; /* Stack nav links vertically */
+    width: 100%; /* Full width dropdown */
+    text-align: center; /* Center text in dropdown */
+    position: absolute; /* Position dropdown */
+    top: calc(100% - 16px); /* Adjust top to bring it closer to the navbar, reduce gap */
+    left: 0;
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+  .nav-toggle {
+    display: block; /* Show toggle button on smaller screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: grey;
+  }
+
+  .nav-links.active {
+    display: block; /* Show nav links when toggle button is active */
+  }
+
+  .nav-links li {
+    margin: 0; /* Remove margin for dropdown items */
+    padding: 10px 0; /* Add padding for better spacing */
+  }
+}
+
+/* Media query for landscape mode and tablets */
+@media only screen and (orientation: landscape) and (max-width: 1024px) {
+  .nav-logo {
+    margin-left: 1rem; /* Adjust margin for smaller screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links on smaller screens */
+    flex-direction: column; /* Stack nav links vertically */
+    width: 100%; /* Full width dropdown */
+    text-align: center; /* Center text in dropdown */
+    position: absolute; /* Position dropdown */
+    top: calc(100% - 16px); /* Adjust top to bring it closer to the navbar, reduce gap */
+    left: 0;
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+  .nav-toggle {
+    display: block; /* Show toggle button on smaller screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: grey;
+  }
+
+  .nav-links.active {
+    display: block; /* Show nav links when toggle button is active */
+  }
+
+  .nav-links li {
+    margin: 0; /* Remove margin for dropdown items */
+    padding: 10px 0; /* Add padding for better spacing */
+  }
+}
+
