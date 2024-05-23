@@ -22,6 +22,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 In order to change the recipient of the email go to server.js file, and change in mailOptions the 'to'. 
 Right now the email is being sent to one of my emails, which is pavlos-kol1993@hotmail.com
+You can check the information (Headers, Payload, Preview etc) that is being sent from Network (contact).
 
 ## Build
 - Run `cd smell-cat-contact`.
